@@ -10,7 +10,7 @@ const teamMembers = [
       role: "Front End Developer", 
       desc: "Crafting immersive & intuitive digital interfaces.", 
       tags: ["React", "Tailwind"],
-      image: "/dimas.jpg" 
+      image: "/dimas.png" 
     },
   { 
     id: "sawal", 
