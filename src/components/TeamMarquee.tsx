@@ -26,7 +26,7 @@ const teamMembers = [
     role: "UI/UX Lead", 
     desc: "Crafting immersive & intuitive digital interfaces.", 
     tags: ["Figma", "Motion"],
-    image: "/team2.jpg" 
+    image: "/team2.png" 
   },
   { 
     id: "ghalib", 
@@ -34,7 +34,7 @@ const teamMembers = [
     role: "Front End Developer", 
     desc: "Cloud Infrastructure & Scalable Systems Expert.", 
     tags: ["Laravel", "Vue"],
-    image: "/ghalib.jpg" 
+    image: "/ghalib.png" 
   },
   { 
     id: "nopal", 
@@ -42,7 +42,7 @@ const teamMembers = [
     role: "Backend Senior", 
     desc: "Database architect focusing on security & speed.", 
     tags: ["PostgreSQL", "Go"],
-    image: "/nopal.jpg" 
+    image: "/nopal.png" 
   },
   { 
     id: "Rafael", 
