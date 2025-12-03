@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
 
-  // Fungsi agar scroll-nya halus (Smooth Scroll)
+  
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     e.preventDefault();
     const element = document.getElementById(targetId);
@@ -17,15 +17,14 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#020202] text-white pt-20">
       
-      {/* BACKGROUND FX (Tetap Sama) */}
+     
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(59,130,246,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(59,130,246,0.15)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none perspective-grid opacity-50" 
            style={{ transform: 'perspective(1000px) rotateX(60deg) translateY(100px) scale(1.5)' }} />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none" />
 
-      {/* --- KONTEN UTAMA --- */}
       <div className="z-10 flex flex-col items-center px-4 text-center max-w-6xl mx-auto">
         
-        {/* 1. BADGE ATAS */}
+      
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +37,6 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* 2. JUDUL BRAND */}
         <motion.h1 
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -48,7 +46,7 @@ export default function Hero() {
           SIREG<span className="text-blue-600">DEV</span>
         </motion.h1>
 
-        {/* 3. SUB-JUDUL */}
+       
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -62,7 +60,7 @@ export default function Hero() {
           <div className="h-[1px] w-12 md:w-32 bg-gradient-to-l from-transparent to-blue-500/50"></div>
         </motion.div>
 
-        {/* 4. DESKRIPSI */}
+        
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -73,14 +71,14 @@ export default function Hero() {
           Dari tampilan antarmuka (Frontend) hingga pengelolaan data (Backend), kami bangun solusi digital yang cepat, aman, dan siap pakai.
         </motion.p>
 
-        {/* 5. TOMBOL AKSI (YANG DIUPDATE) */}
+        
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-5 mt-12"
         >
-          {/* TOMBOL 1: KE TIM KAMI (#team) */}
+         
           <Link 
             href="#team"
             onClick={(e) => handleScroll(e, "team")}
@@ -92,7 +90,7 @@ export default function Hero() {
             </span>
           </Link>
           
-          {/* TOMBOL 2: KE LAYANAN (#services) */}
+         
           <Link 
             href="#services"
             onClick={(e) => handleScroll(e, "services")}

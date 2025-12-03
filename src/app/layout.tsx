@@ -13,7 +13,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* suppressHydrationWarning digunakan untuk menyembunyikan error dari ekstensi browser */}
       <body className="antialiased" suppressHydrationWarning={true}>
         {children}
       </body>

@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TeamMarquee from "@/components/TeamMarquee"; // <-- Kita pakai yang baru
+import TeamMarquee from "@/components/TeamMarquee"; 
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 

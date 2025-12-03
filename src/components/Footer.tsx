@@ -1,10 +1,10 @@
-"use client"; // Wajib ada agar onClick berfungsi
+"use client"; 
 import Link from "next/link";
 import { Hexagon, Mail, MapPin, ArrowRight, Phone } from "lucide-react";
 
 export default function Footer() {
   
-  // Fungsi Smooth Scroll
+  
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     e.preventDefault();
     const element = document.getElementById(targetId);
@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-[#050505] pt-20 pb-10 border-t border-white/10 relative overflow-hidden">
       
-      {/* BIG WATERMARK */}
+      
       <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none opacity-[0.02]">
         <h1 className="text-[25vw] font-black text-white leading-none tracking-tighter text-center whitespace-nowrap">
           SIREGDEV
@@ -24,10 +24,10 @@ export default function Footer() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* GRID DIPERBAIKI: Gap dikurangi dari 12 jadi 8, Margin bawah dikurangi */}
+        
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
           
-          {/* Col 1: Brand */}
+        
           <div className="md:col-span-1 space-y-6">
             <div className="flex items-center gap-2">
                <Hexagon size={24} className="text-blue-500 fill-blue-900/20" />
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2: Navigation */}
+         
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">Menu</h3>
             <ul className="space-y-3 text-gray-500 text-sm">
@@ -68,7 +68,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Legal */}
+          
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">Legal</h3>
             <ul className="space-y-3 text-gray-500 text-sm">
@@ -77,7 +77,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Newsletter & Contact (DITAMBAH NO HP) */}
+        
           <div>
             <h3 className="text-white font-bold mb-6 tracking-wide">Kontak</h3>
             <div className="flex gap-2 mb-6">
@@ -92,7 +92,7 @@ export default function Footer() {
               </button>
             </div>
             
-            {/* List Kontak */}
+           
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-500 text-sm group cursor-pointer">
                  <div className="p-2 rounded-full bg-white/5 group-hover:bg-blue-500/20 transition-colors">
@@ -113,7 +113,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Bar */}
+       
         <div className="border-t border-white/5 pt-8 flex flex-col items-center justify-center gap-3 text-xs font-mono text-gray-600 text-center">
           <div>
             &copy; 2025 SIREGDEV INC. ALL RIGHTS RESERVED.

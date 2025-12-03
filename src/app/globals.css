@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Warna dasar website: Hitam Pekat & Putih */
+ 
   --background: #000000;
   --foreground: #ffffff;
 }
@@ -10,12 +10,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* Mencegah scroll samping yang tidak diinginkan */
+  overflow-x: hidden; 
 }
 
-/* --- CUSTOM UTILITIES --- */
-
-/* 1. Utility untuk menyembunyikan scrollbar (agar Carousel terlihat bersih) */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -24,37 +21,28 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-/* 2. Utility Perspective Grid (Untuk efek lantai 3D di Hero) */
+
 .perspective-grid {
   transform-style: preserve-3d;
 }
 
-/* --- ANIMASI MARQUEE / CAROUSEL --- */
 
-/* Definisi Gerakan: Geser dari 0% ke -50% */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    /* Kita geser -50% karena konten diduplikasi (cloned) */
+    
     transform: translateX(-50%);
   }
 }
 
-/* Class untuk menjalankan animasi */
+
 .animate-scroll {
-  animation: scroll 40s linear infinite; /* Speed 40 detik (makin besar makin pelan/elegan) */
+  animation: scroll 40s linear infinite; 
 }
 
-/* LOGIKA PAUSE "SMART" (Advanced CSS):
-   Menggunakan selector modern :has().
-   
-   Artinya: "Pause animasi .animate-scroll HANYA JIKA di dalamnya ada 
-   elemen dengan class 'group/card' yang sedang di-hover."
-   
-   Note: Tanda slash (/) pada class Tailwind 'group/card' harus ditulis '\/ ' di CSS biasa.
-*/
+
 .animate-scroll:has(.group\/card:hover) {
   animation-play-state: paused;
 }

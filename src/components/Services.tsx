@@ -5,14 +5,14 @@ export default function Services() {
   return (
     <section id="services" className="pt-10 pb-32 bg-black relative overflow-hidden">
       
-      {/* Background FX */}
+     
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/10 blur-[100px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-900/10 blur-[100px] rounded-full pointer-events-none" />
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-900/20 to-transparent" />
 
       <div className="container mx-auto px-4 max-w-7xl relative z-10">
         
-        {/* HEADER */}
+       
         <div className="mb-20 border-l-4 border-blue-500 pl-6">
           <div className="flex items-center gap-2 mb-2">
         
@@ -26,10 +26,9 @@ export default function Services() {
           </p>
         </div>
 
-        {/* BENTO GRID */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* Box 1: Web Apps */}
+          
           <div className="md:col-span-2 p-10 rounded-sm bg-[#050505] border border-blue-900/30 hover:border-blue-500/60 transition-all group relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
             <div className="absolute top-0 right-0 p-10 opacity-20 group-hover:opacity-40 transition-opacity">
@@ -42,7 +41,7 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Box 2: Mobile */}
+          
           <div className="p-10 rounded-sm bg-[#050505] border border-blue-900/30 hover:border-cyan-500/60 transition-all group relative overflow-hidden flex flex-col justify-between">
             <Smartphone size={40} className="text-cyan-400 mb-6" />
             <div>
@@ -51,7 +50,7 @@ export default function Services() {
             </div>
           </div>
 
-          {/* Box 3: Backend */}
+         
           <div className="p-10 rounded-sm bg-[#050505] border border-blue-900/30 hover:border-indigo-500/60 transition-all group relative overflow-hidden flex flex-col justify-between">
             <Server size={40} className="text-indigo-400 mb-6" />
              <div>
@@ -60,7 +59,7 @@ export default function Services() {
             </div>
           </div>
 
-           {/* Box 4: UI/UX */}
+         
            <div className="md:col-span-2 p-10 rounded-sm bg-[#050505] border border-blue-900/30 hover:border-blue-400/60 transition-all group relative overflow-hidden">
              <div className="absolute top-0 right-0 p-10 opacity-20 group-hover:opacity-40 transition-opacity">
                <Code2 size={100} className="text-cyan-500" />

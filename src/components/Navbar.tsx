@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 export default function Navbar() {
   
-  // 1. FUNGSI SMOOTH SCROLL
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     e.preventDefault(); // Mencegah loncat kasar
     const element = document.getElementById(targetId);
@@ -14,7 +13,6 @@ export default function Navbar() {
     }
   };
 
-  // Daftar Menu Baru (Bahasa Indonesia & ID Tujuan)
   const navItems = [
     { name: "Home", id: "home" },
     { name: "Tim Kami", id: "team" },
@@ -29,13 +27,12 @@ export default function Navbar() {
       transition={{ duration: 0.8 }}
       className="fixed top-6 inset-x-0 mx-auto w-fit z-50 px-4"
     >
-      {/* Container Kaca - Padding diperbesar (px-14) agar navbar lebih panjang */}
+ 
       <div className="relative bg-black/70 backdrop-blur-xl border border-blue-500/30 rounded-full px-14 py-3 flex items-center gap-12 shadow-[0_0_30px_rgba(59,130,246,0.2)]">
         
-        {/* Glowing Line di bawah navbar */}
+        
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 
-        {/* Logo - Scroll ke Home */}
         <Link 
           href="#home" 
           onClick={(e) => handleScroll(e, "home")}
@@ -50,7 +47,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Menu dengan Smooth Scroll */}
+     
         <div className="hidden md:flex items-center gap-8 text-xs font-bold tracking-widest text-gray-400 font-mono uppercase">
           {navItems.map((item) => (
             <Link 
@@ -59,7 +56,7 @@ export default function Navbar() {
               onClick={(e) => handleScroll(e, item.id)}
               className="hover:text-blue-400 hover:scale-110 transition-all duration-300 flex items-center"
             >
-              {/* Dekorasi slash kecil sebelum menu */}
+           
               <span className="text-blue-900 mr-1">//</span>
               {item.name}
             </Link>
